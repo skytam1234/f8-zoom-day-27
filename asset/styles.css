@@ -1,256 +1,256 @@
 * {
-    box-sizing: border-box;
-    text-decoration: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 body {
-    position: relative;
+  position: relative;
 }
 .container-fill {
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    border-radius: 8px;
-    box-shadow: 4px 8px 10px #ccc;
-    background: #fff;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  border-radius: 8px;
+  box-shadow: 4px 8px 10px #ccc;
+  background: #fff;
 }
 .slide-view {
-    position: relative;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    width: 500px;
-    height: 100%;
-    background: #ccc;
-    overflow: hidden;
+  position: relative;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  width: 500px;
+  height: 100%;
+  background: #ccc;
+  overflow: hidden;
 }
 .slide-bar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: auto;
-    height: 100%;
-    transform: translateX(-100%);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: auto;
+  height: 100%;
+  transform: translateX(-100%);
 }
 
 .slide-item {
-    flex-shrink: 0;
-    width: 500px;
-    height: 100%;
+  flex-shrink: 0;
+  width: 500px;
+  height: 100%;
 }
 .slide-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .btn {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: initial;
-    color: #787a7c;
-    z-index: 1000;
-    font-size: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: initial;
+  color: #787a7c;
+  z-index: 1000;
+  font-size: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 .btn :hover {
-    color: #cccccc;
+  color: #cccccc;
 }
 .next-btn {
-    right: 0;
+  right: 0;
 }
 .slide-around {
-    bottom: 5px;
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99999;
-    gap: 8px;
+  bottom: 5px;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  gap: 8px;
 }
 .slide-around-item {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: red;
 }
 .slide-around .active {
-    height: 35px;
-    width: 35px;
-    border: 5px solid #fff;
+  height: 35px;
+  width: 35px;
+  border: 5px solid #fff;
 }
 /* live-code-editor */
 .container {
-    width: 100vw;
-    height: 100vh;
-    background: #fff;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
 }
 .content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    background: #5c5050;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background: #5c5050;
+  border-radius: 10px;
 }
 .preview {
-    background: #fff;
-    flex: 1;
-    height: 100%;
-    border: 2px solid #000;
-    color: #fff;
+  background: #fff;
+  flex: 1;
+  height: 100%;
+  border: 2px solid #000;
+  color: #fff;
 }
 #codePlace {
-    padding: 40px;
-    display: block;
-    flex: 1;
-    height: 100%;
-    border: 2px solid #000;
-    border-radius: 10px;
-    background: #fff;
-    color: #000;
+  padding: 40px;
+  display: block;
+  flex: 1;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
 }
 .preview-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(50% - 10px);
-    height: 100%;
-    background: initial;
-    z-index: 9000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(50% - 10px);
+  height: 100%;
+  background: initial;
+  z-index: 3000;
 }
 .contextMenu {
-    position: absolute;
-    min-width: 200px;
-    min-height: 300px;
-    border-radius: 10px;
-    padding: 20px 10px;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 3px 4px 5px #ccc;
-    visibility: hidden;
-    transition: opacity ease 1s;
-    z-index: 4000;
+  position: absolute;
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 20px 10px;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 3px 4px 5px #ccc;
+  visibility: hidden;
+  transition: opacity ease 1s;
+  z-index: 4000;
 }
 .contextMenu.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .contextMenu-item {
-    padding: 3px 10px;
-    border-radius: 4px;
-    color: #000;
-    background: #fff;
-    border-bottom: 1px dotted #ccc;
-    cursor: pointer;
-    transition: all ease 1s;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #000;
+  background: #fff;
+  border-bottom: 1px dotted #ccc;
+  cursor: pointer;
+  transition: all ease 1s;
 }
 .contextMenu-item:hover {
-    background: #ccc;
+  background: #ccc;
 }
 /* tender.html */
 .tender-container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
 }
 .tender-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 390px;
-    height: 844px;
-    border-radius: 15px;
-    background: #e7e9e8;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 844px;
+  border-radius: 15px;
+  background: #e7e9e8;
+  overflow: hidden;
 }
 .tender-view {
-    width: 100%;
-    height: 83%;
-    background: #fff;
-    border-left: 1px solid #e7e9e8;
-    border-right: 1px solid #e7e9e8;
-    overflow: hidden;
+  width: 100%;
+  height: 83%;
+  background: #fff;
+  border-left: 1px solid #e7e9e8;
+  border-right: 1px solid #e7e9e8;
+  overflow: hidden;
 }
 .list-item {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 .item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform ease 0.5s;
-    z-index: 1;
-    display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform ease 0.5s;
+  z-index: 1;
+  display: flex;
 }
 .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
 }
 
 .item-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* index.html */
 .card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .card-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 80px;
-    border-radius: 8px;
-    box-shadow: 2px 3px 4px #ccc;
-    color: rgb(239, 250, 215);
-    background: #e2abab;
-    cursor: pointer;
-    font-size: 24px;
-    transition: all ease 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 2px 3px 4px #ccc;
+  color: rgb(239, 250, 215);
+  background: #e2abab;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all ease 1s;
 }
 .card-block:hover {
-    background: #17f835;
+  background: #17f835;
 }
 .card-block:hover a {
-    color: #f81788;
+  color: #f81788;
 }
 /* back home */
 .backHome {
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    z-index: 10000;
-    top: 10px;
-    left: 20px;
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  z-index: 10000;
+  top: 10px;
+  left: 20px;
 }
