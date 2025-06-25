@@ -48,7 +48,7 @@ function handleMoving(isNext) {
     slideBar.style.transform = `translateX(-${currentIndex * 100}%)`;
     slideBar.style.transition = `all ease ${duration}s`;
 }
-//slideshow:change
+
 let oldElement;
 let currentElement;
 nextBtn.onclick = function () {
