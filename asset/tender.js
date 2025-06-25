@@ -127,6 +127,7 @@ tenderView.addEventListener("touchstart", function (e) {
 });
 
 tenderView.addEventListener("touchmove", function (e) {
+  e.preventDefault();
   if (!isMove) return;
   const items = $$(".item");
   const item = getTopItem();
