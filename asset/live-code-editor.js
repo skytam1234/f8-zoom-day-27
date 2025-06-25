@@ -12,35 +12,35 @@ const maxX1 = preview.clientLeft + preview.offsetWidth;
 const maxY1 = preview.clientTop + preview.offsetHeight;
 
 textCode.addEventListener("input", (e) => {
-  preview.srcdoc = e.target.value;
+    preview.srcdoc = e.target.value;
 });
 window.addEventListener("beforeunload", (e) => {
-  if (textCode.value.trim().length > 0) {
-    e.returnValue = "Bạn chưa lưu dữ liệu, bạn có muốn thoát không?";
-  }
+    if (textCode.value.trim().length > 0) {
+        e.returnValue = "Bạn chưa lưu dữ liệu, bạn có muốn thoát không?";
+    }
 });
 document.addEventListener("contextmenu", (e) => {
-  e.preventDefault();
-  const currentMaxX = e.clientX + contextMenu.offsetWidth;
-  const currentMaxY = e.clientY + contextMenu.offsetHeight;
-  contextMenu.style.left = e.clientX + "px";
-  contextMenu.style.top = e.clientY + "px";
-  console.log(e.clientX);
-  if (currentMaxX > maxX || currentMaxX > maxX1) {
-    contextMenu.style.left = e.clientX - contextMenu.offsetWidth + "px";
-  }
-  if (currentMaxY > maxY || currentMaxY > maxY1) {
-    contextMenu.style.top = e.clientY - contextMenu.offsetHeight + "px";
-  }
-  if (e.clientX > maxX) {
+    e.preventDefault();
+    const currentMaxX = e.clientX + contextMenu.offsetWidth;
+    const currentMaxY = e.clientY + contextMenu.offsetHeight;
     contextMenu.style.left = e.clientX + "px";
-  }
-  contextMenu.classList.add("show");
+    contextMenu.style.top = e.clientY + "px";
+    console.log(e.clientX);
+    if (currentMaxX > maxX || currentMaxX > maxX1) {
+        contextMenu.style.left = e.clientX - contextMenu.offsetWidth + "px";
+    }
+    if (currentMaxY > maxY || currentMaxY > maxY1) {
+        contextMenu.style.top = e.clientY - contextMenu.offsetHeight + "px";
+    }
+    if (e.clientX > maxX) {
+        contextMenu.style.left = e.clientX + "px";
+    }
+    contextMenu.classList.add("show");
 });
 document.addEventListener("mousedown", (e) => {
-  contextMenu.classList.remove("show");
+    contextMenu.classList.remove("show");
 });
 btnDelete.addEventListener("click", function () {
-  textCode.value = "";
-  preview.srcdoc = "";
+    textCode.value = "";
+    preview.srcdoc = "";
 });

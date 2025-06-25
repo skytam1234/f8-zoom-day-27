@@ -120,7 +120,7 @@ body {
     background: #fff;
     color: #000;
 }
-.overlay {
+.preview-overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -174,15 +174,15 @@ body {
     width: 390px;
     height: 844px;
     border-radius: 15px;
-    background: #7c7e7d;
+    background: #e7e9e8;
     overflow: hidden;
 }
 .tender-view {
     width: 100%;
     height: 83%;
     background: #fff;
-    border-left: 1px solid #7c7e7d;
-    border-right: 1px solid #7c7e7d;
+    border-left: 1px solid #e7e9e8;
+    border-right: 1px solid #e7e9e8;
     overflow: hidden;
 }
 .list-item {
@@ -251,5 +251,6 @@ body {
     width: 150px;
     height: 40px;
     z-index: 10000;
-    top: 0;
+    top: 10px;
+    left: 20px;
 }
