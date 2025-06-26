@@ -178,6 +178,7 @@ body {
   overflow: hidden;
 }
 .tender-view {
+  position: relative;
   width: 100%;
   height: 83%;
   background: #fff;
@@ -185,6 +186,44 @@ body {
   border-right: 1px solid #e7e9e8;
   overflow: hidden;
 }
+
+.block-around {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 10px;
+  position: absolute;
+  z-index: 1000;
+}
+.around-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 40px;
+  height: 40px;
+  color: #f85717;
+  transition: all ease 0.5s;
+}
+
+.around-dislike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  color: #17f835;
+  transition: all ease 0.5s;
+  outline: 10px;
+}
+
 .list-item {
   width: 100%;
   height: 100%;
