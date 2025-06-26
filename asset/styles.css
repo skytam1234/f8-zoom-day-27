@@ -278,6 +278,10 @@ body {
   font-size: 24px;
   transition: all ease 1s;
 }
+.card-block a {
+  display: inline-block;
+  padding: 30px 50px;
+}
 .card-block:hover {
   background: #17f835;
 }
