@@ -65,6 +65,7 @@ tenderView.addEventListener("mousemove", function (e) {
         isNext = false;
         if (check < 0) {
             overlay.style.background = `rgba(243, 72, 4, 0.5)`;
+
             balance = -1;
         } else if (check > 0) {
             overlay.style.background = `rgba(11, 230, 102, 0.5)`;
@@ -98,8 +99,8 @@ tenderView.addEventListener("mouseup", function (e) {
         }, 500);
     } else {
         item.style.transform = `none`;
+        overlay.style.background = `rgba(11, 230, 102, 0)`;
     }
-    pointStart = null;
 });
 
 tenderView.addEventListener("touchstart", function (e) {
@@ -134,6 +135,7 @@ tenderView.addEventListener("touchmove", function (e) {
         isNext = false;
         if (check < 0) {
             overlay.style.background = `rgba(243, 72, 4, 0.5)`;
+            item.style.borderRadius = `10px`;
             balance = -1;
         } else if (check > 0) {
             overlay.style.background = `rgba(11, 230, 102, 0.5)`;
