@@ -77,7 +77,7 @@ tenderView.addEventListener("mousemove", function (e) {
   if (!item) return;
   const overlay = item.querySelector(".overlay");
   let point = { x: e.clientX, y: e.clientY };
-  let check = (point.x - pointStart.x) / 100;
+  let check = (point.x - pointStart.x) / 75;
 
   if (Math.abs(check) < 1) {
     isNext = false;
@@ -119,7 +119,7 @@ tenderView.addEventListener("mouseup", function (e) {
       : (item.style.transform = `translateX(150%)`);
     setTimeout(() => {
       item.remove();
-    }, 500);
+    }, 100);
   } else {
     item.style.transform = `none`;
     overlay.style.background = `rgba(11, 230, 102, 0)`;
@@ -190,7 +190,7 @@ tenderView.addEventListener("touchend", function (e) {
       : (item.style.transform = `translateX(150%)`);
     setTimeout(() => {
       item.remove();
-    }, 500);
+    }, 100);
   } else {
     item.style.transform = `none`;
     overlay.style.background = `rgba(11, 230, 102, 0)`;
